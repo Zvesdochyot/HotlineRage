@@ -309,34 +309,34 @@ map_size = [len(game_map[0]), len(game_map)]  # Size of map
 tile_size = [int(SCREEN_SIZE[0] / map_size[0]), int(SCREEN_SIZE[1] / map_size[1])]  # Size of one tile
 
 # Sprites
-S_BACKGROUND = pygame.transform.scale(pygame.image.load("sprites/background.png"), SCREEN_SIZE)
-S_WALL_ORIGINAL = pygame.image.load("sprites/wall.png")
+S_BACKGROUND = pygame.transform.scale(pygame.image.load("assets/background.png"), SCREEN_SIZE)
+S_WALL_ORIGINAL = pygame.image.load("assets/wall.png")
 S_WALL = pygame.transform.scale(S_WALL_ORIGINAL, tile_size)
 
-S_HEALTH = pygame.image.load("sprites/bonus_hp.png")
+S_HEALTH = pygame.image.load("assets/bonus_hp.png")
 S_HEALTH = pygame.transform.scale(S_HEALTH, (
     int(S_HEALTH.get_width() * (S_WALL.get_width() / S_WALL_ORIGINAL.get_width())),
     int(S_HEALTH.get_height() * (S_WALL.get_width() / S_WALL_ORIGINAL.get_width()))))
 
-S_BULLET = pygame.image.load("sprites/bullet.png")
+S_BULLET = pygame.image.load("assets/bullet.png")
 S_BULLET = pygame.transform.scale(S_BULLET, (
     int(S_BULLET.get_width() * (S_WALL.get_width() / S_WALL_ORIGINAL.get_width())),
     int(S_BULLET.get_height() * (S_WALL.get_width() / S_WALL_ORIGINAL.get_width()))))
 
-S_PLAYER = pygame.image.load("sprites/player.png")
+S_PLAYER = pygame.image.load("assets/player.png")
 S_PLAYER = pygame.transform.scale(S_PLAYER, (
     int(S_PLAYER.get_width() * (S_WALL.get_width() / S_WALL_ORIGINAL.get_width())),
     int(S_PLAYER.get_height() * (S_WALL.get_width() / S_WALL_ORIGINAL.get_width()))))
-S_PLAYER_DEAD = pygame.image.load("sprites/player_dead.png")
+S_PLAYER_DEAD = pygame.image.load("assets/player_dead.png")
 S_PLAYER_DEAD = pygame.transform.scale(S_PLAYER_DEAD, (
     int(S_PLAYER_DEAD.get_width() * (S_WALL.get_width() / S_WALL_ORIGINAL.get_width())),
     int(S_PLAYER_DEAD.get_height() * (S_WALL.get_width() / S_WALL_ORIGINAL.get_width()))))
 
-S_ENEMY = pygame.image.load("sprites/enemy.png")
+S_ENEMY = pygame.image.load("assets/enemy.png")
 S_ENEMY = pygame.transform.scale(S_ENEMY, (
     int(S_ENEMY.get_width() * (S_WALL.get_width() / S_WALL_ORIGINAL.get_width())),
     int(S_ENEMY.get_height() * (S_WALL.get_width() / S_WALL_ORIGINAL.get_width()))))
-S_ENEMY_DEAD = pygame.image.load("sprites/enemy_dead.png")
+S_ENEMY_DEAD = pygame.image.load("assets/enemy_dead.png")
 S_ENEMY_DEAD = pygame.transform.scale(S_ENEMY_DEAD, (
     int(S_ENEMY_DEAD.get_width() * (S_WALL.get_width() / S_WALL_ORIGINAL.get_width())),
     int(S_ENEMY_DEAD.get_height() * (S_WALL.get_width() / S_WALL_ORIGINAL.get_width()))))
